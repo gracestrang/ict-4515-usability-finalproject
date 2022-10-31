@@ -172,6 +172,57 @@ section {
   padding: 0rem; }
 
 /*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+form {
+  padding: 2rem 0; }
+
+input[type=text], input[type=email], input[type=phone] {
+  padding: 2rem;
+  border: none;
+  outline: none;
+  background: #f6f6f6;
+  margin: 1rem 0;
+  width: 100%; }
+
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #512D6D;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 3rem; }
+
+input[type=submit] {
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 50px;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  background: #512D6D;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  border: none; }
+  input[type=submit]:hover, input[type=submit]:focus {
+    background: #9F5CC0;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    border: none; }
+
+/*--------------------------------------------------------------
 # Flex Classes
 --------------------------------------------------------------*/
 .display-flex {
@@ -374,9 +425,15 @@ section {
 
 .p2-r {
   padding: 0rem 2rem 0em 0em; }
+  @media (max-width: 991px) {
+    .p2-r {
+      padding: 0rem 0rem 0em 0em; } }
 
 .p2-l {
   padding: 0rem 0rem 0em 2em; }
+  @media (max-width: 991px) {
+    .p2-l {
+      padding: 0rem 0rem 0em 0em; } }
 
 .p3-r {
   padding: 0rem 3rem 0em 0em; }
@@ -471,7 +528,12 @@ section {
   -webkit-transition: all ease 1s;
   display: inline-block;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 2rem; }
+  .btn span, .btn:link span, .btn:visited span {
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 5px; }
 
 .btn--purple:link, .btn--purple:visited {
   background: #512D6D;
@@ -1165,7 +1227,7 @@ ul.quicklinks {
       -ms-flex-direction: column;
       flex-direction: column; }
       ul.quicklinks li a:hover, ul.quicklinks li a:focus {
-        text-decoration: underline; }
+        text-decoration: none; }
       ul.quicklinks li a span {
         background: #9F5CC0;
         color: #fff;
@@ -1244,3 +1306,133 @@ section.full-width-cta {
 /*--------------------------------------------------------------
 # Interior Pages
 --------------------------------------------------------------*/
+section.full-width-cta-contact {
+  background-image: url("../img/home/pexels-this-is-zun-3653269.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: auto;
+  position: relative; }
+  section.full-width-cta-contact .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7rem;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 50vw;
+    height: auto;
+    text-align: center; }
+  @media (max-width: 991px) {
+    section.full-width-cta-contact {
+      height: 60vh; }
+      section.full-width-cta-contact .overlay {
+        max-width: 60vw;
+        width: 100%;
+        padding: 3rem; } }
+
+section.full-width-cta-about {
+  background-image: url("../img/about/about-cta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: auto;
+  position: relative; }
+  section.full-width-cta-about .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7rem;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 50vw;
+    height: auto;
+    text-align: center; }
+  @media (max-width: 991px) {
+    section.full-width-cta-about {
+      height: 60vh; }
+      section.full-width-cta-about .overlay {
+        max-width: 60vw;
+        width: 100%;
+        padding: 3rem; } }
+
+section.full-width-cta-community {
+  background: url("../img/about/about-middle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: auto;
+  position: relative; }
+  section.full-width-cta-community .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7rem;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 50vw;
+    height: auto;
+    text-align: center; }
+  @media (max-width: 991px) {
+    section.full-width-cta-community {
+      height: 60vh; }
+      section.full-width-cta-community .overlay {
+        max-width: 60vw;
+        width: 100%;
+        padding: 3rem; } }
+
+ul.breadcrumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  padding-inline-start: 0; }
+  ul.breadcrumbs li {
+    padding: 0 1rem; }
+
+ul.sidebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 3rem 3rem 0 2rem;
+  padding-inline-start: 0; }
+  ul.sidebar li {
+    padding: 1rem;
+    border-bottom: 1px solid #9F5CC0; }
+    ul.sidebar li a {
+      color: #3D3935;
+      text-decoration: none; }
+      ul.sidebar li a:hover, ul.sidebar li a:focus {
+        text-decoration: underline; }
+
+.outage img, .outage .btn {
+  margin-bottom: 2rem; }
+
+.outage h1 {
+  margin-bottom: 2rem; }
+
+.contact-img img, .contact-img .btn {
+  margin-bottom: 2rem; }
+
+.contact-img h3 {
+  margin-top: 2rem; }

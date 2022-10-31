@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+# Interior Pages
+--------------------------------------------------------------*/
+
+//full width cta
+section.full-width-cta-contact {
+    background-image:url('../img/home/pexels-this-is-zun-3653269.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:60vh;
+    width:auto;
+    position:relative;
+  
+    .overlay {
+      @include absCenter;
+      padding:7rem;
+      background:rgba($white,.8);
+      max-width:50vw;
+      height:auto;
+      text-align:center;
+    }
+  
+    @include lg {
+      height:60vh;
+  
+      .overlay {
+        max-width:60vw;
+        width: 100%;
+        padding:3rem;
+      }
+    }
+  }
+
+
+  section.full-width-cta-about {
+    background-image:url('../img/about/about-cta.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:60vh;
+    width:auto;
+    position:relative;
+  
+    .overlay {
+      @include absCenter;
+      padding:7rem;
+      background:rgba($white,.8);
+      max-width:50vw;
+      height:auto;
+      text-align:center;
+    }
+  
+    @include lg {
+      height:60vh;
+  
+      .overlay {
+        max-width:60vw;
+        width: 100%;
+        padding:3rem;
+      }
+    }
+  }
+
+
+  section.full-width-cta-community {
+    background:url('../img/about/about-middle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:60vh;
+    width:auto;
+    position:relative;
+
+  
+    .overlay {
+      @include absCenter;
+      padding:7rem;
+      background:rgba($white,.8);
+      max-width:50vw;
+      height:auto;
+      text-align:center;
+    }
+  
+
+    @include lg {
+      height:60vh;
+  
+      .overlay {
+        max-width:60vw;
+        width: 100%;
+        padding:3rem;
+      }
+    }
+  }
+
+
+  ul.breadcrumbs {
+      @include flex-row;
+      list-style-type:none;
+      margin-left:0;
+      margin-bottom:2rem;
+      padding-inline-start:0;
+
+      li {
+          padding:0 1rem;
+      }
+  }
+
+
+  ul.sidebar {
+    @include flex-column;
+    list-style-type:none; 
+    padding:3rem 3rem 0 2rem;
+    padding-inline-start:0;
+
+    li {
+        padding:1rem;
+        border-bottom:1px solid $light-purple;
+
+        a {
+            color:$gray;
+            text-decoration:none;
+
+            &:hover, &:focus {
+                text-decoration:underline;
+            }
+        }
+    }
+  }
+
+  .outage {
+      img, .btn {
+          margin-bottom:2rem;
+      }
+
+      h1 {
+          margin-bottom:2rem;
+      }
+  }
+
+  .contact-img {
+    img, .btn {
+        margin-bottom:2rem;
+    }
+      
+     h3 {
+       margin-top:2rem;
+     }  
+}    
+  
+
+
+
+  

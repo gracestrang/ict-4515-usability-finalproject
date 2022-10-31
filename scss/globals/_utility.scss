@@ -1,0 +1,302 @@
+/*--------------------------------------------------------------
+# Flex Classes
+--------------------------------------------------------------*/
+
+.display-flex {
+    @include display-flex;
+  }
+  
+  .flex {
+   @include flex;
+  }
+  
+  .flex-column {
+   @include flex-column;
+  }
+  
+  .flex-row {
+    @include flex-row;
+  }
+  
+  .align-center {
+    @include align-center;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Grid
+  --------------------------------------------------------------*/
+  .row-space-between {
+   @include row-space-between;
+  }
+  
+  .row-space-around {
+   @include row-space-around;
+  }
+  
+  .row-space-evenly {
+    @include row-space-evenly;
+  }
+
+/*--------------------------------------------------------------
+# Flex Width Classes
+--------------------------------------------------------------*/
+
+.flex-10 {
+    flex:0 0 10%;
+
+  @include lg {
+    flex:0 0 100%;  
+   }
+}
+
+.flex-15 {
+  flex:0 0 15%;
+
+@include lg {
+  flex:0 0 100% !important;  
+ }
+}
+
+.flex-20 {
+    flex:0 0 20%;
+
+  @include lg {
+   flex:0 0 100% !important;  
+  }
+}
+
+.flex-25 {
+  flex:0 0 25%;
+
+@include lg {
+ flex:0 0 100% !important;  
+ }
+} 
+
+.flex-30 {
+    flex:0 0 30%;
+
+  @include lg {
+    flex:0 0 100% !important;  
+   }
+}
+
+.flex-33 {
+  flex:0 0 33%;
+
+@include lg {
+  flex:0 0 100% !important;  
+ }
+}
+
+.flex-35 {
+  flex:0 0 35%;
+
+@include lg {
+  flex:0 0 100% !important;  
+ }
+}
+
+.flex-40 {
+  flex:0 0 40%;
+
+  @include lg {
+    flex:0 0 100% !important;  
+  }
+}
+
+.flex-45 {
+  flex:0 0 45%;
+
+  @include lg {
+    flex:0 0 100% !important;  
+  }
+}
+
+.flex-50 {
+    flex:0 0 50%;
+  @include lg {
+     flex:0 0 100% !important;  
+  }
+}
+
+.flex-60 {
+    flex:0 0 60%;
+
+ @include lg {
+     flex:0 0 100% !important;  
+  }
+}
+.flex-70 {
+    flex:0 0 70%;
+
+ @include lg {
+    flex:0 0 100% !important;  
+   }
+}
+.flex-80 {
+    flex:0 0 80%;
+
+   @include lg {
+     flex:0 0 100% !important;  
+  }
+}
+.flex-90 {
+    flex:0 0 90%;
+
+ @include lg {
+   flex:0 0 100% !important;  
+  }
+}
+.flex-100 {
+    flex:0 0 100%;
+}
+
+/*--------------------------------------------------------------
+  # Padding and Margin Classes
+  --------------------------------------------------------------*/
+  .p2 {
+    padding:2rem;
+  }
+
+  .p2-all {
+    padding:2rem 6rem;
+
+    @include lg {
+      padding:3rem 1.5rem;
+    }
+  }
+  .ptb-1 {
+    padding:1rem 0rem;
+  }
+  .p5-tb {
+    padding:5rem 0rem;
+  }
+  .p3-tb {
+    padding:3rem 0rem;
+  }
+  .p2-tb {
+    padding:2rem 0rem;
+  }
+  .p15-rl {
+    padding:0rem 15px;
+  }
+  .pr-15 {
+    padding-right:15px;
+  }
+  .pl-15 {
+    padding-left:15px;
+  }
+  .p2-rl {
+    padding:0rem 2rem;
+  }
+  .p3-rl {
+    padding:0px 30px;
+  }
+  .p2-r {
+    padding:0rem 2rem 0em 0em;
+
+    @include lg {
+      padding:0rem 0rem 0em 0em;
+    }
+  }
+  .p2-l {
+    padding:0rem 0rem 0em 2em;
+    @include lg {
+      padding:0rem 0rem 0em 0em;
+    }
+  }
+  .p3-r {
+    padding:0rem 3rem 0em 0em;
+
+    @include lg {
+      padding:0rem;
+    }
+  }
+  .p3-l {
+    padding:0rem 0rem 0em 3em;
+
+    @include lg {
+      padding:0rem;
+    }
+  }
+  .ptb-2 {
+    padding:2rem 0rem;
+  }
+  .p2-t {
+    padding-top:2rem;
+  }
+  .p2-b {
+    padding-bottom:2rem;
+  }
+  .p1-tb {
+    padding:1rem 0rem;
+  }
+  .p4 {
+    padding:4rem 0rem;
+  }
+  .p5 {
+    padding:5rem 0rem;
+  }
+  .mt-5 {
+    margin-top:5rem;
+  }
+  .mt-3 {
+    margin-top:3rem;
+  }
+
+  .p2-b {
+    padding-bottom:2rem;
+  }
+
+  .p6-tb {
+    padding:6rem 0;
+
+    @include lg {
+      padding:2rem 0;
+    }
+  }
+
+ /*--------------------------------------------------------------
+  # Width classes
+  --------------------------------------------------------------*/
+
+  .w-50 {
+    width:50%;
+    padding: 1rem;
+    margin:0 auto;
+
+    @include lg {
+      width:100%;  
+     }
+  }
+
+  
+  /*--------------------------------------------------------------
+  # Text Align
+  --------------------------------------------------------------*/
+  .text-center {
+    text-align:center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align:right;
+  }
+
+  /*--------------------------------------------------------------
+  # Order
+  --------------------------------------------------------------*/
+  @media only screen and (max-width: 991px) {
+  .order-2-mobile {
+    order:2;
+  }
+
+  .order-1-mobile {
+    order:1;
+  }
+}

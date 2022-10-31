@@ -1,0 +1,367 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Varela+Round&display=swap');
+
+
+body {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+     min-height: 100vh;
+     font-family: $source-sans;
+     color: $gray;
+     width: auto;
+     margin:0 !important;
+     text-rendering:optimizeLegibility;
+  }
+
+//setting rem value. 1rem = 10px
+ html { 
+    font-size: 10px; 
+    text-rendering:optimizeLegibility;
+  }
+  
+  p a {
+   text-decoration:none;
+  }
+  
+  p a:hover, a:hover {
+   text-decoration:none;
+   cursor:pointer;
+  }
+  
+  a:active,
+  a:hover,
+  a:focus, 
+  a:visited {
+    outline: 0;
+    text-decoration:none;
+    border:none;
+    color:inherit;
+  }
+  
+  h1, h2, h3, h4, h5, p, span {
+    letter-spacing:0;
+    font-style:normal;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin-bottom:0rem;
+    margin-top:0;
+  }
+
+  .varela {
+    font-family:$header-font;
+  }
+
+  .source-sans {
+    font-family:$source-sans;
+  }
+
+  .purple {
+    color:$purple;
+  }
+
+  .white {
+    color:$white !important;
+  }
+
+  .light-purple {
+    color:$light-purple;
+  }
+  
+  h1, h1 a {
+    @include font-stack-full($header-font,4.883rem, 5.86rem, 400);
+    color:$purple;
+    font-style:normal;
+    font-weight:400;
+  
+    @include lg {
+        @include font-stack-full($header-font,3rem, 4rem, 400);
+        color:$purple;
+        font-style:normal;
+        font-weight:400;
+      
+    }
+  }
+  
+  h1.white {
+    @extend h1;
+    color:$white;
+  }
+
+  h1.light-purple {
+    @extend h1;
+    color:$light-purple;
+  }
+
+  h1.gray {
+    @extend h1;
+    color:$gray;
+  }
+  
+  
+  h2, h2 a {
+    @include font-stack-full($header-font,3.906rem, 4.687rem, 400);
+    color:$purple;
+    font-style:normal;
+    font-weight:400;
+  
+    @include lg {
+      @include font-stack-full($header-font,2.7rem, 3.5rem, 400);
+     color:$purple;
+     font-style:normal;
+        font-weight:400;
+    }
+  }
+  
+  h2.white {
+    @extend h2;
+    color:$white;
+  }
+
+  h2.light-purple {
+    @extend h2;
+    color:$light-purple;
+  }
+
+  h2.gray {
+    @extend h2;
+    color:$gray;
+  }
+  
+  h3, h3 a {
+    @include font-stack-full($header-font,3.125rem, 3.75rem, 400);
+    color:$light-purple;
+    font-style:normal;
+    font-weight:400;
+  
+    @include lg {
+     @include font-stack-full($header-font,2.4rem, 3.0rem, 400);
+     color:$light-purple;
+     font-style:normal;
+     font-weight:400;
+    }
+  }
+
+  h3.white {
+    @extend h3;
+    color:$white;
+  }
+
+  h3.purple {
+    @extend h3;
+    color:$purple;
+  }
+
+
+  h3.gray {
+    @extend h3;
+    color:$gray;
+  }
+
+
+  h4, h4 a {
+    @include font-stack-full($header-font,2.5rem, 3.75rem, 400);
+    color:$purple;
+    font-style:normal;
+    font-weight:400;
+
+    @include lg {
+      @include font-stack-full($header-font,2.304rem, 3.456rem, 400);
+      color:$light-purple;
+      font-style:normal;
+      font-weight:400;
+     }
+  }
+
+  h4.white {
+    @extend h4;
+    color:$white;
+  }
+
+  h4.light-purple {
+    @extend h4;
+    color:$light-purple;
+  }
+
+  h4.gray {
+    @extend h4;
+    color:$gray;
+  }
+
+  h5, h5 a {
+    @include font-stack-full($source-sans,1.6rem, 2.4rem, 600);
+    color:$purple;
+    font-style:normal;
+    font-weight:600;
+  }
+
+  h5.white {
+    @extend h5;
+    color:$white;
+  }
+
+  p.large, span.large {
+    @include font-stack-full($source-sans, 2rem, 3rem, 400);
+    color:$gray;
+    font-style:normal;
+    font-weight:400;
+  
+    a {
+      @include font-stack-full($source-sans, 2rem, 3rem, 400);
+      color:$blue !important;
+      text-decoration:underline;
+      font-style:normal;
+      font-weight:400;
+     }
+  }
+
+  p.large-white, span.large-white {
+    @include font-stack-full($source-sans, 2rem, 3rem, 400);
+    color:$white;
+    font-style:normal;
+    font-weight:400;
+
+  
+    a {
+      @include font-stack-full($source-sans, 2rem, 3rem, 400);
+      color:$white !important;
+      text-decoration:underline;
+      font-style:normal;
+      font-weight:400;
+     }
+  }
+  
+p, span {
+    @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+    color:$gray;
+    font-style:normal;
+    font-weight:400;
+  
+    a {
+      @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+      color:$blue !important;
+      text-decoration:underline;
+      font-style:normal;
+      font-weight:400;
+     }
+  }
+
+  
+  p.white, p.white a {
+    @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+    color:$white;
+    font-style:normal;
+    font-weight:400;
+
+    a {
+        @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+        color:$white !important;
+        text-decoration:underline;
+        font-style:normal;
+        font-weight:400;
+    }
+  }
+
+figcaption {
+    font-size:1.2rem;
+    line-height:2.6rem;
+    font-family:$source-sans;
+    margin:8px 0;
+ }
+
+  
+p.small, span.small, small {
+  @include font-stack-full($source-sans, 1.28rem, 1.92rem, 400);
+  color:$gray;
+}
+
+p.small-white {
+  @include font-stack-full($source-sans, 1.28rem, 1.92rem, 400);
+  color:$white;      
+ }
+
+small.white {
+  @include font-stack-full($source-sans, 1.28rem, 1.92rem, 400);
+  color:$white;    
+}
+
+span.purple-uppercase {
+  @include font-stack-full($source-sans, 1.5rem, 2.4rem, 600);
+  color:$light-purple;
+  text-transform:uppercase;
+}
+
+b, strong {
+    @include font-stack-full($source-sans, 1.6rem, 2.4rem, 600);
+    color:$gray;
+
+    em {
+      font-weight:600;
+    }
+  
+    a {
+     @include font-stack-full($source-sans, 1.6rem, 2.4rem, 600);
+      color:$blue !important;
+      text-decoration:underline;
+   }
+}
+
+  
+  
+  em {
+    @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+    color:$gray;
+    font-style:italic;
+  
+    a {
+        @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+        color:$blue;
+        font-style:italic;
+        text-decoration:underline;
+     }
+  }
+  
+  ul, ol {
+    margin:1rem 0;
+    padding-inline-start:20px;
+     li {
+        @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+        color:$gray;
+        margin-bottom:.5rem;
+
+        b, strong {
+          color:$purple;
+        }
+
+        a {
+          @include font-stack-full($source-sans, 1.6rem, 2.4rem, 400);
+          color:$blue;
+          text-decoration:underline;
+       }
+    }
+  }
+
+  
+ ol {
+    list-style: decimal;
+  }
+  
+  
+  li > ul,
+  li > ol {
+    margin-bottom: 0;
+    margin-left: 2%;
+  }
+  
+  li > ul,
+  li > ol {
+    margin-bottom: 0;
+    margin-left:2%;
+  }
+  
+  
+
+  

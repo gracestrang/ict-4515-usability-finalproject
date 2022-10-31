@@ -1,0 +1,21 @@
+//Abstract
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//Global Styles
+@import "globals/base";
+@import "globals/utility";
+@import "globals/buttons";
+@import "globals/typography";
+
+
+//Layouts
+@import "layout/footer";
+@import "layout/navigation";
+
+
+
+//Pages
+@import "pages/home";
+@import "pages/interior";
+
