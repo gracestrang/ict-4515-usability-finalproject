@@ -1156,6 +1156,13 @@ header {
             color: #fff;
             text-decoration: none;
             padding: 0 1rem; }
+            header section.main-nav nav.main-navigation ul li a.btn {
+              padding:1rem 3rem;
+            }
+
+            header section.main-nav nav.main-navigation ul li a.btn:hover {
+              color:#9F5CC0;
+            }
             header section.main-nav nav.main-navigation ul li a:hover, header section.main-nav nav.main-navigation ul li a:focus {
               color: #fff;
               text-decoration: underline; }
