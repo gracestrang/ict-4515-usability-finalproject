@@ -1143,7 +1143,16 @@ header {
         -ms-flex-pack: space-between;
         list-style-type: none;
         justify-content: right;
-        margin-left: auto; }
+        margin-left: auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: center;
+       -webkit-align-content: center;
+        align-content: center;
+        vertical-align:middle;
+       }
         header section.main-nav nav.main-navigation ul li {
           margin-right: 4rem; }
           header section.main-nav nav.main-navigation ul li:last-child {
